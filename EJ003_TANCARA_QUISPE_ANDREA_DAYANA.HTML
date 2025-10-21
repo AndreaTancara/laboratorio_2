@@ -1,87 +1,97 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Mi Plantilla Web</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="estilo_plantilla.css" type="text/css">
-</head>
-<body>
+<!DOCTYPE html> <!-- Declara que este es un documento HTML5 -->
+<html> <!-- Etiqueta raíz que envuelve todo el contenido HTML -->
+<head> <!-- Cabecera del documento, contiene metadatos y enlaces -->
+<title>Mi Plantilla Web</title> <!-- Título que aparece en la pestaña del navegador -->
+<meta charset="UTF-8"> <!-- Define la codificación de caracteres para que se muestren correctamente -->
+<link rel="stylesheet" href="estilo_plantilla.css" type="text/css"> <!-- Enlaza el archivo CSS para los estilos -->
+</head> <!-- Cierra la sección head -->
+<body> <!-- Cuerpo del documento, contiene todo el contenido visible -->
 
-<div id="banner">
-    <h1>MI SITIO WEB PERSONAL</h1>
-</div>
+<!-- Banner principal en la parte superior -->
+<div id="banner"> <!-- Div contenedor para el banner con identificador único -->
+    <h1>MI SITIO WEB PERSONAL</h1> <!-- Título principal del banner -->
+</div> <!-- Cierra el div del banner -->
 
-<div id="menu">
-    <ul>
-        <li><a href="#inicio" onclick="cambiarSeccion('inicio')">INICIO</a></li>
-        <li><a href="#estudios" onclick="cambiarSeccion('estudios')">ESTUDIOS</a></li>
-        <li><a href="#hobbies" onclick="cambiarSeccion('hobbies')">HOBBIES</a></li>
-        <li><a href="#contacto" onclick="cambiarSeccion('contacto')">CONTACTO</a></li>
-    </ul>
-</div>
+<!-- Menú de navegación -->
+<div id="menu"> <!-- Div contenedor para el menú -->
+    <ul> <!-- Lista no ordenada para los items del menú -->
+        <li><a href="#inicio" onclick="cambiarSeccion('inicio')">INICIO</a></li> <!-- Item de lista con enlace a inicio -->
+        <li><a href="#estudios" onclick="cambiarSeccion('estudios')">ESTUDIOS</a></li> <!-- Item de lista con enlace a estudios -->
+        <li><a href="#hobbies" onclick="cambiarSeccion('hobbies')">HOBBIES</a></li> <!-- Item de lista con enlace a hobbies -->
+        <li><a href="#contacto" onclick="cambiarSeccion('contacto')">CONTACTO</a></li> <!-- Item de lista con enlace a contacto -->
+    </ul> <!-- Cierra la lista del menú -->
+</div> <!-- Cierra el div del menú -->
 
-<div id="contenido">
-    <h2>BIENVENIDO A MI PAGINA</h2>
-    <p>Esta es mi primera plantilla web creada para el laboratorio de Tecnologías Emergentes I.</p>
-    <p>Usando todo lo que hemos aprendido en clase:</p>
-    <ul>
-        <li>HTML básico</li>
-        <li>Etiquetas de texto</li>
-        <li>Enlaces e imágenes</li>
-        <li>Listas ordenadas y no ordenadas</li>
-        <li>Tablas</li>
-        <li>Formularios</li>
-        <li>CSS para estilos</li>
-    </ul>
-</div>
+<!-- Contenido principal que cambia dinámicamente -->
+<div id="contenido"> <!-- Div contenedor para el contenido principal -->
+    <h2>BIENVENIDO A MI PAGINA</h2> <!-- Subtítulo de bienvenida -->
+    <p>Esta es mi primera plantilla web creada para el laboratorio de Tecnologías Emergentes I.</p> <!-- Párrafo descriptivo -->
+    <p>Usando todo lo que hemos aprendido en clase:</p> <!-- Párrafo introductorio a la lista -->
+    <ul> <!-- Lista no ordenada de temas aprendidos -->
+        <li>HTML básico</li> <!-- Item de lista: HTML básico -->
+        <li>Etiquetas de texto</li> <!-- Item de lista: Etiquetas de texto -->
+        <li>Enlaces e imágenes</li> <!-- Item de lista: Enlaces e imágenes -->
+        <li>Listas ordenadas y no ordenadas</li> <!-- Item de lista: Listas -->
+        <li>Tablas</li> <!-- Item de lista: Tablas -->
+        <li>Formularios</li> <!-- Item de lista: Formularios -->
+        <li>CSS para estilos</li> <!-- Item de lista: CSS -->
+    </ul> <!-- Cierra la lista de temas -->
+</div> <!-- Cierra el div del contenido -->
 
-<div id="pie">
-    <p>UNIVERSIDAD PÚBLICA DE EL ALTO - INGENIERÍA DE SISTEMAS - 2025</p>
-</div>
+<!-- Pie de página -->
+<div id="pie"> <!-- Div contenedor para el pie de página -->
+    <p>UNIVERSIDAD PÚBLICA DE EL ALTO - INGENIERÍA DE SISTEMAS - 2025</p> <!-- Texto del pie de página -->
+</div> <!-- Cierra el div del pie -->
 
-<script>
-function cambiarSeccion(seccion) {
-    var contenido = document.getElementById('contenido');
+<!-- Script JavaScript para la interactividad -->
+<script> <!-- Inicia la sección de código JavaScript -->
+// Función para cambiar el contenido según la sección seleccionada
+function cambiarSeccion(seccion) { // Define la función que recibe el nombre de la sección
+    var contenido = document.getElementById('contenido'); // Obtiene el elemento div con id "contenido"
     
-    if (seccion == 'inicio') {
-        contenido.innerHTML = '<h2>PAGINA DE INICIO</h2>' +
-                             '<p>Hola, soy estudiante de Ingeniería de Sistemas.</p>' +
-                             '<p>Esta página muestra todo lo aprendido en el laboratorio.</p>' +
-                             '<p><strong>Tecnologías Emergentes I</strong> es una materia importante para nuestro desarrollo profesional.</p>';
-    }
+    // Si se selecciona la sección "inicio"
+    if (seccion == 'inicio') { // Comprueba si la sección es "inicio"
+        contenido.innerHTML = '<h2>PAGINA DE INICIO</h2>' + // Cambia el contenido HTML del div
+                             '<p>Hola, soy estudiante de Ingeniería de Sistemas.</p>' + // Párrafo de presentación
+                             '<p>Esta página muestra todo lo aprendido en el laboratorio.</p>' + // Párrafo descriptivo
+                             '<p><strong>Tecnologías Emergentes I</strong> es una materia importante para nuestro desarrollo profesional.</p>'; // Párrafo con texto en negrita
+    } // Cierra el if de inicio
     
-    if (seccion == 'estudios') {
-        contenido.innerHTML = '<h2>MIS ESTUDIOS</h2>' +
-                             '<table border="1">' +
-                             '<tr><th>Universidad</th><td>Universidad Pública de El Alto</td></tr>' +
-                             '<tr><th>Carrera</th><td>Ingeniería de Sistemas</td></tr>' +
-                             '<tr><th>Semestre</th><td>Sexto Semestre</td></tr>' +
-                             '<tr><th>Materia</th><td>Tecnologías Emergentes I</td></tr>' +
-                             '</table>';
-    }
+    // Si se selecciona la sección "estudios"
+    if (seccion == 'estudios') { // Comprueba si la sección es "estudios"
+        contenido.innerHTML = '<h2>MIS ESTUDIOS</h2>' + // Cambia el contenido HTML del div
+                             '<table border="1">' + // Crea una tabla con borde
+                             '<tr><th>Universidad</th><td>Universidad Pública de El Alto</td></tr>' + // Fila de tabla: Universidad
+                             '<tr><th>Carrera</th><td>Ingeniería de Sistemas</td></tr>' + // Fila de tabla: Carrera
+                             '<tr><th>Semestre</th><td>Sexto Semestre</td></tr>' + // Fila de tabla: Semestre
+                             '<tr><th>Materia</th><td>Tecnologías Emergentes I</td></tr>' + // Fila de tabla: Materia
+                             '</table>'; // Cierra la tabla
+    } // Cierra el if de estudios
     
-    if (seccion == 'hobbies') {
-        contenido.innerHTML = '<h2>MIS HOBBIES</h2>' +
-                             '<p>En mi tiempo libre me gusta:</p>' +
-                             '<ol>' +
-                             '<li>Ver doramas</li>' +
-                             '<li>Jugar fútbol con amigos</li>' +
-                             '<li>Escuchar música</li>' +
-                             '<li>Ver películas</li>' +
-                             '</ol>';
-    }
+    // Si se selecciona la sección "hobbies"
+    if (seccion == 'hobbies') { // Comprueba si la sección es "hobbies"
+        contenido.innerHTML = '<h2>MIS HOBBIES</h2>' + // Cambia el contenido HTML del div
+                             '<p>En mi tiempo libre me gusta:</p>' + // Párrafo introductorio
+                             '<ol>' + // Lista ordenada (numerada)
+                             '<li>Ver doramas</li>' + // Item 1 de la lista
+                             '<li>Jugar fútbol con amigos</li>' + // Item 2 de la lista
+                             '<li>Escuchar música</li>' + // Item 3 de la lista
+                             '<li>Ver películas</li>' + // Item 4 de la lista
+                             '</ol>'; // Cierra la lista ordenada
+    } // Cierra el if de hobbies
     
-    if (seccion == 'contacto') {
-        contenido.innerHTML = '<h2>CONTACTO</h2>' +
-                             '<form>' +
-                             '<p><strong>Nombre:</strong> Andrea Tancara Quispe</p>' +
-                             '<p><strong>Email:</strong> andreatq@universidad.edu.bo</p>' +
-                             '<p><strong>Celular:</strong> 70671114</p>' +
-                             '<p><strong>Dirección:</strong> El Alto, La Paz - Bolivia</p>' +
-                             '</form>';
-    }
-}
-</script>
+    // Si se selecciona la sección "contacto"
+    if (seccion == 'contacto') { // Comprueba si la sección es "contacto"
+        contenido.innerHTML = '<h2>CONTACTO</h2>' + // Cambia el contenido HTML del div
+                             '<form>' + // Inicia un formulario (aunque no tiene campos de entrada)
+                             '<p><strong>Nombre:</strong> Andrea Tancara Quispe</p>' + // Párrafo con nombre en negrita
+                             '<p><strong>Email:</strong> andreatq@universidad.edu.bo</p>' + // Párrafo con email en negrita
+                             '<p><strong>Celular:</strong> 70671114</p>' + // Párrafo con celular en negrita
+                             '<p><strong>Dirección:</strong> El Alto, La Paz - Bolivia</p>' + // Párrafo con dirección en negrita
+                             '</form>'; // Cierra el formulario
+    } // Cierra el if de contacto
+} // Cierra la función cambiarSeccion
+</script> <!-- Cierra la sección de JavaScript -->
 
-</body>
-</html>
+</body> <!-- Cierra el cuerpo del documento -->
+</html> <!-- Cierra la etiqueta raíz html -->
