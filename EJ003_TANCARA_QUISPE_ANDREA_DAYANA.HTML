@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mi Plantilla Web</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="estilo_plantilla.css" type="text/css">
+</head>
+<body>
+
+<div id="banner">
+    <h1>MI SITIO WEB PERSONAL</h1>
+</div>
+
+<div id="menu">
+    <ul>
+        <li><a href="#inicio" onclick="cambiarSeccion('inicio')">INICIO</a></li>
+        <li><a href="#estudios" onclick="cambiarSeccion('estudios')">ESTUDIOS</a></li>
+        <li><a href="#hobbies" onclick="cambiarSeccion('hobbies')">HOBBIES</a></li>
+        <li><a href="#contacto" onclick="cambiarSeccion('contacto')">CONTACTO</a></li>
+    </ul>
+</div>
+
+<div id="contenido">
+    <h2>BIENVENIDO A MI PAGINA</h2>
+    <p>Esta es mi primera plantilla web creada para el laboratorio de Tecnologías Emergentes I.</p>
+    <p>Usando todo lo que hemos aprendido en clase:</p>
+    <ul>
+        <li>HTML básico</li>
+        <li>Etiquetas de texto</li>
+        <li>Enlaces e imágenes</li>
+        <li>Listas ordenadas y no ordenadas</li>
+        <li>Tablas</li>
+        <li>Formularios</li>
+        <li>CSS para estilos</li>
+    </ul>
+</div>
+
+<div id="pie">
+    <p>UNIVERSIDAD PÚBLICA DE EL ALTO - INGENIERÍA DE SISTEMAS - 2025</p>
+</div>
+
+<script>
+function cambiarSeccion(seccion) {
+    var contenido = document.getElementById('contenido');
+    
+    if (seccion == 'inicio') {
+        contenido.innerHTML = '<h2>PAGINA DE INICIO</h2>' +
+                             '<p>Hola, soy estudiante de Ingeniería de Sistemas.</p>' +
+                             '<p>Esta página muestra todo lo aprendido en el laboratorio.</p>' +
+                             '<p><strong>Tecnologías Emergentes I</strong> es una materia importante para nuestro desarrollo profesional.</p>';
+    }
+    
+    if (seccion == 'estudios') {
+        contenido.innerHTML = '<h2>MIS ESTUDIOS</h2>' +
+                             '<table border="1">' +
+                             '<tr><th>Universidad</th><td>Universidad Pública de El Alto</td></tr>' +
+                             '<tr><th>Carrera</th><td>Ingeniería de Sistemas</td></tr>' +
+                             '<tr><th>Semestre</th><td>Sexto Semestre</td></tr>' +
+                             '<tr><th>Materia</th><td>Tecnologías Emergentes I</td></tr>' +
+                             '</table>';
+    }
+    
+    if (seccion == 'hobbies') {
+        contenido.innerHTML = '<h2>MIS HOBBIES</h2>' +
+                             '<p>En mi tiempo libre me gusta:</p>' +
+                             '<ol>' +
+                             '<li>Ver doramas</li>' +
+                             '<li>Jugar fútbol con amigos</li>' +
+                             '<li>Escuchar música</li>' +
+                             '<li>Ver películas</li>' +
+                             '</ol>';
+    }
+    
+    if (seccion == 'contacto') {
+        contenido.innerHTML = '<h2>CONTACTO</h2>' +
+                             '<form>' +
+                             '<p><strong>Nombre:</strong> Andrea Tancara Quispe</p>' +
+                             '<p><strong>Email:</strong> andreatq@universidad.edu.bo</p>' +
+                             '<p><strong>Celular:</strong> 70671114</p>' +
+                             '<p><strong>Dirección:</strong> El Alto, La Paz - Bolivia</p>' +
+                             '</form>';
+    }
+}
+</script>
+
+</body>
+</html>
