@@ -1,96 +1,112 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    background-color: #f5f5f5;
+/* Estilos para el cuerpo principal de la página */
+body { /* Selecciona el elemento body (cuerpo de la página) */
+    margin: 0; /* Elimina todos los márgenes externos por defecto */
+    padding: 0; /* Elimina todo el relleno interno por defecto */
+    font-family: Arial; /* Define la fuente de texto principal como Arial */
+    background-color: #f5f5f5; /* Establece el color de fondo de toda la página como gris muy claro */
 }
 
-#banner {
-    background-color: #aa1414;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #0e0d0d;
+/* Estilos para la sección del banner (encabezado) */
+#banner { /* Selecciona el elemento con id="banner" */
+    background-color: #aa1414; /* Define el color de fondo como rojo oscuro */
+    color: white; /* Establece el color del texto como blanco */
+    padding: 20px; /* Agrega 20 píxeles de espacio interno en todos los lados */
+    text-align: center; /* Centra el texto horizontalmente */
+    border-bottom: 2px solid #0e0d0d; /* Agrega una línea inferior de 2px color negro */
 }
 
-#banner h1 {
-    margin: 0;
-    font-size: 24px;
+/* Estilos para el título dentro del banner */
+#banner h1 { /* Selecciona los elementos h1 que están dentro del banner */
+    margin: 0; /* Elimina el margen exterior del título */
+    font-size: 24px; /* Establece el tamaño de fuente en 24 píxeles */
 }
 
-#menu {
-    background-color: #ee7c12;
-    padding: 10px;
-    border-bottom: 1px solid #070707;
+/* Estilos para la sección del menú de navegación */
+#menu { /* Selecciona el elemento con id="menu" */
+    background-color: #ee7c12; /* Define el color de fondo como naranja */
+    padding: 10px; /* Agrega 10 píxeles de espacio interno */
+    border-bottom: 1px solid #070707; /* Agrega una línea inferior de 1px color negro */
 }
 
-#menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+/* Estilos para la lista no ordenada dentro del menú */
+#menu ul { /* Selecciona las listas no ordenadas dentro del menú */
+    list-style-type: none; /* Elimina los puntos/bullets de la lista */
+    margin: 0; /* Elimina el margen exterior de la lista */
+    padding: 0; /* Elimina el relleno interno de la lista */
+    text-align: center; /* Centra los elementos de la lista horizontalmente */
 }
 
-#menu li {
-    display: inline;
-    margin: 0 15px;
+/* Estilos para los elementos de la lista del menú */
+#menu li { /* Selecciona los elementos de lista dentro del menú */
+    display: inline; /* Muestra los elementos en línea (uno al lado del otro) */
+    margin: 0 15px; /* Agrega margen izquierdo y derecho de 15px entre elementos */
 }
 
-#menu a {
-    text-decoration: none;
-    color: #070707;
-    padding: 5px 10px;
-    font-weight: bold;
+/* Estilos para los enlaces del menú */
+#menu a { /* Selecciona todos los enlaces dentro del menú */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: #070707; /* Establece el color del texto como negro */
+    padding: 5px 10px; /* Agrega relleno: 5px arriba/abajo, 10px izquierda/derecha */
+    font-weight: bold; /* Establece el texto en negrita */
 }
 
-#menu a:hover {
-    background-color: #336699;
-    color: white;
+/* Estilos para cuando el mouse pasa sobre los enlaces del menú */
+#menu a:hover { /* Aplica estos estilos cuando el cursor está sobre el enlace */
+    background-color: #336699; /* Cambia el fondo a azul cuando se pasa el mouse */
+    color: white; /* Cambia el color del texto a blanco cuando se pasa el mouse */
 }
 
-#contenido {
-    background-color: #d5d6a5;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    min-height: 300px;
+/* Estilos para la sección de contenido principal */
+#contenido { /* Selecciona el elemento con id="contenido" */
+    background-color: #d5d6a5; /* Define el color de fondo como verde claro/amarillento */
+    padding: 20px; /* Agrega 20 píxeles de espacio interno */
+    margin: 20px; /* Agrega 20 píxeles de espacio externo en todos los lados */
+    border: 1px solid #ccc; /* Agrega un borde gris claro de 1 píxel */
+    min-height: 300px; /* Establece una altura mínima de 300 píxeles */
 }
 
-#contenido h2 {
-    color: #336699;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
+/* Estilos para los títulos de segundo nivel dentro del contenido */
+#contenido h2 { /* Selecciona los elementos h2 dentro del contenido */
+    color: #336699; /* Establece el color del texto como azul */
+    border-bottom: 1px solid #eee; /* Agrega una línea inferior gris muy claro */
+    padding-bottom: 10px; /* Agrega espacio debajo del texto antes del borde */
 }
 
-#contenido p {
-    line-height: 1.6;
+/* Estilos para los párrafos dentro del contenido */
+#contenido p { /* Selecciona los párrafos dentro del contenido */
+    line-height: 1.6; /* Establece la altura de línea para mejor legibilidad (espaciado entre líneas) */
 }
 
-#contenido table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #9accd3;
+/* Estilos para las tablas dentro del contenido */
+#contenido table { /* Selecciona las tablas dentro del contenido */
+    width: 100%; /* Hace que la tabla ocupe el 100% del ancho disponible */
+    border-collapse: collapse; /* Une los bordes de las celdas adyacentes */
+    background-color: #9accd3; /* Establece el color de fondo de la tabla como azul claro */
 }
 
-#contenido th, #contenido td {
-    border: 1px solid #d4e976;
-    padding: 8px;
-    text-align: left;
+/* Estilos para las celdas de encabezado y datos de las tablas */
+#contenido th, #contenido td { /* Selecciona tanto th (encabezados) como td (datos) */
+    border: 1px solid #d4e976; /* Agrega bordes de 1px color verde claro amarillento */
+    padding: 8px; /* Agrega 8 píxeles de espacio interno en las celdas */
+    text-align: left; /* Alinea el texto a la izquierda en las celdas */
 }
 
-#contenido th {
-    background-color: #9accd3;
+/* Estilos específicos para las celdas de encabezado de tabla */
+#contenido th { /* Selecciona solo las celdas de encabezado (th) */
+    background-color: #9accd3; /* Establece color de fondo azul claro para encabezados */
 }
 
-#contenido ol, #contenido ul {
-    margin-left: 20px;
+/* Estilos para listas ordenadas y no ordenadas dentro del contenido */
+#contenido ol, #contenido ul { /* Selecciona tanto listas ordenadas como no ordenadas */
+    margin-left: 20px; /* Agrega un margen izquierdo de 20px para sangría */
 }
 
-#pie {
-    background-color: #e29f0e;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
+/* Estilos para la sección del pie de página */
+#pie { /* Selecciona el elemento con id="pie" */
+    background-color: #e29f0e; /* Define el color de fondo como amarillo/naranja */
+    color: white; /* Establece el color del texto como blanco */
+    padding: 10px; /* Agrega 10 píxeles de espacio interno */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Agrega 20 píxeles de espacio arriba del elemento */
+    font-size: 12px; /* Establece el tamaño de fuente en 12 píxeles */
 }
